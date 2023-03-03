@@ -1,0 +1,23 @@
+# setuptools_scm dynamic versioning
+src/substrait/_version.py
+
+# Editor files
+.idea
+.vscode
+
+# Compiled source
+*.py[ocd]
+__pycache__
+.pytest_cache
+
+# Python packaging artifacts
+dist
+*.egg-info
+
+# Buf working directory
+./proto
+
+# OS generated files
+.directory
+.gdb_history
+.DS_Store
