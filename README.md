@@ -19,7 +19,7 @@ conda activate pysubstrait
 
 ## Generate protocol buffers
 ```
-./gen_proto
+./gen_proto.sh
 ```
 
 # Submodule
