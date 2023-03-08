@@ -10,6 +10,18 @@ git clone --recursive https://github.com/voltrondata/substrait-python.git
 cd substrait-python
 ```
 
+# Build
+## Conda env
+```
+conda env create -f environment.yml
+conda activate pysubstrait
+```
+
+## Generate protocol buffers
+```
+./gen_proto
+```
+
 # Submodule
 ## Update the substrait submodule locally
 ```

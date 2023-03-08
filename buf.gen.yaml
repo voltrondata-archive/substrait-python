@@ -1,0 +1,4 @@
+plugins:
+  - name: python
+    out: substrait/proto
+version: v1
