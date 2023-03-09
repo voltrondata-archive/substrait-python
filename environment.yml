@@ -1,0 +1,7 @@
+name: pysubstrait
+channels:
+  - conda-forge
+dependencies:
+  - buf
+  - python >=3.8.1,<4
+  - protoletariat >=2.0.0
