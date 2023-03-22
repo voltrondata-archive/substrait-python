@@ -3,5 +3,5 @@ channels:
   - conda-forge
 dependencies:
   - buf
+  - poetry
   - python >=3.8.1,<4
-  - protoletariat >=2.0.0

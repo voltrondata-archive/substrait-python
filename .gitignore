@@ -1,1 +1,19 @@
+# Editor files
+.idea
+.vscode
 
+# Compiled source
+*.py[ocd]
+__pycache__
+.pytest_cache
+
+# Python packaging artifacts
+dist
+
+# Buf working directory
+./proto
+
+# OS generated files
+.directory
+.gdb_history
+.DS_Store

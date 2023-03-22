@@ -1,4 +1,4 @@
 plugins:
   - name: python
-    out: substrait/proto
+    out: pysubstrait/proto
 version: v1
