@@ -5,3 +5,4 @@ dependencies:
   - buf
   - pip
   - python >=3.8.1,<4
+  - setuptools >= 61.0
