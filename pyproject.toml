@@ -1,26 +1,29 @@
-[tool.poetry]
-name = "pysubstrait"
-version = "0.1.0"
+[project]
+name = "substrait"
+version = "0.0.1"
 description = "A python package for Substrait."
-authors = ["Substrait contributors"]
-license = "Apache-2.0"
+authors = [
+    {name = "Substrait contributors", email = "substrait@googlegroups.com"}
+]
+license = {text = "Apache-2.0"}
 readme = "README.md"
+requires-python = ">=3.8.1"
+dependencies = [
+    "protobuf == 3.20.1",  # protobuf==3.20 C extensions aren't compatible with 3.19.4
+]
 
-[tool.poetry.build]
-generate-setup-file = false
-script = "build.py"
+[project.optional-dependencies]
+dev = [
+    "protoletariat >= 2.0.0",
+    "pytest >= 7.0.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.8.1"
-protobuf = "3.20.1"  # protobuf==3.20 C extensions aren't compatible with 3.19.4
-
-[tool.poetry.group.dev.dependencies]
-protoletariat = "^2.0.0"
-
-[tool.poetry.group.test.dependencies]
-pytest = "^7.0.0"
-substrait-validator = "^0.0.11"
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["substrait*"]
+exclude = ["substrait.tests*"]
+namespaces = false
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

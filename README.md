@@ -18,28 +18,28 @@ conda env create -f environment.yml
 conda activate pysubstrait
 ```
 
-## Poetry
-Second, install the python dependencies from within the conda environment using poetry.
-```
-poetry install
-```
-
 # Build
 ## PySubstrait package
-Generate the protobuf files and subsequently build the python package wheel/sdist.
+### Editable installation
 ```
-poetry build
+pip install -e .
+```
+
+### Editable dev installation
+```
+pip install -e ".[dev]"
 ```
 
 ## Generate protocol buffers
-Generate only the protobuf files manually.
+Generate the protobuf files manually. Requires dev installation.
 ```
-./gen_proto.sh
+python -m build
 ```
 
 # Test
+Requires dev installation.
 ```
-poetry run pytest
+pytest
 ```
 
 # Submodule

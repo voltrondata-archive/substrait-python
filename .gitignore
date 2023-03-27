@@ -9,6 +9,7 @@ __pycache__
 
 # Python packaging artifacts
 dist
+*.egg-info
 
 # Buf working directory
 ./proto

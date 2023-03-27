@@ -3,10 +3,10 @@
 set -eou pipefail
 
 namespace=pysubstrait
-submodule_dir=./substrait
+submodule_dir=./third_party/substrait
 src_dir="$submodule_dir"/proto
 tmp_dir=./proto
-dest_dir=./pysubstrait/proto
+dest_dir=./src/substrait/proto
 
 python "$submodule_dir"/tools/proto_prefix.py "$tmp_dir" "$namespace" "$src_dir"
 
