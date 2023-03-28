@@ -9,20 +9,11 @@ license = {text = "Apache-2.0"}
 readme = "README.md"
 requires-python = ">=3.8.1"
 dependencies = [
-    "protobuf == 3.20.1",  # protobuf==3.20 C extensions aren't compatible with 3.19.4
+    "protobuf >= 3.20",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "protoletariat >= 2.0.0",
-    "pytest >= 7.0.0",
-]
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["substrait*"]
-exclude = ["substrait.tests*"]
-namespaces = false
+[tool.pytest.ini_options]
+pythonpath = "src"
 
 [build-system]
 requires = ["setuptools"]

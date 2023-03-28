@@ -1,4 +1,4 @@
-# PySubstrait
+# Substrait
 A python package for Substrait.
 
 ## Status
@@ -12,7 +12,7 @@ cd substrait-python
 
 # Setting up your environment
 ## Conda env
-First, create a conda environment with the system dependencies.
+Create a conda environment with developer dependencies.
 ```
 conda env create -f environment.yml
 conda activate pysubstrait
@@ -25,19 +25,13 @@ conda activate pysubstrait
 pip install -e .
 ```
 
-### Editable dev installation
-```
-pip install -e ".[dev]"
-```
-
 ## Generate protocol buffers
-Generate the protobuf files manually. Requires dev installation.
+Generate the protobuf files manually. Requires protobuf `v3.20.1`.
 ```
-python -m build
+./gen_proto.sh
 ```
 
 # Test
-Requires dev installation.
 ```
 pytest
 ```
