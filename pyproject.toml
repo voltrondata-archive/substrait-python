@@ -1,6 +1,5 @@
 [project]
 name = "substrait"
-version = "0.0.1"
 description = "A python package for Substrait."
 authors = [
     {name = "Substrait contributors", email = "substrait@googlegroups.com"}
@@ -11,10 +10,14 @@ requires-python = ">=3.8.1"
 dependencies = [
     "protobuf >= 3.20",
 ]
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+write_to = "src/substrait/_version.py"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=61", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"

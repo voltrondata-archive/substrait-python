@@ -1,3 +1,6 @@
+# setuptools_scm dynamic versioning
+src/substrait/_version.py
+
 # Editor files
 .idea
 .vscode
