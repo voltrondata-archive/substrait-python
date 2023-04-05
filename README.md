@@ -2,10 +2,10 @@
 [Substrait](https://substrait.io) is a cross-language specification for data compute operations.
 
 ## Goals
-The Substrait Python package aims to provide a Python interface to Substrait. It will allow users to construct and manipulate a Substrait plan from Python for evaluation by a Substrait consumer, such as Arrow or DuckDB.
+The Substrait Python package aims to provide a Python interface to Substrait. It will allow users to construct and manipulate a Substrait Plan from Python for evaluation by a Substrait consumer, such as DataFusion or DuckDB.
 
 ## Non-goals
-Currently, there are no plans to extend feature development beyond the Substrait specification itself. For example, there is no plan to introduce a SQL-to-Substrait converter in Python, similar to Isthmus found in [Substrait Java](https://github.com/substrait-io/substrait-java).
+The Substrait Python package is not an execution engine for Substrait Plans.
 
 ## Status
 This is an experimental package that is still under development.
