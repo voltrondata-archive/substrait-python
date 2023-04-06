@@ -42,7 +42,7 @@ In [6]: protobuf_msg = compiler.compile(query).SerializeToString()
 In [7]: type(protobuf_msg)
 Out[7]: bytes
 ```
-## Read the Plan protobuf message using Substrait Python
+## Read the Plan protobuf message using PySubstrait
 ```
 In [8]: import substrait
 
