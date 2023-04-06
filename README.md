@@ -1,4 +1,4 @@
-# Substrait
+# PySubstrait
 [Substrait](https://substrait.io) is a cross-language specification for data compute operations.
 
 ## Goals
