@@ -3,16 +3,16 @@
 A Python package for [Substrait](https://substrait.io), the cross-language specification for data compute operations.
 
 ## Goals
-The Substrait Python package aims to provide a Python interface to Substrait. It will allow users to construct and manipulate a Substrait Plan from Python for evaluation by a Substrait consumer, such as DataFusion or DuckDB.
+PySubstrait aims to provide a Python interface for the Substrait specification. It will allow users to construct and manipulate a Substrait Plan from Python for evaluation by a Substrait consumer, such as DataFusion or DuckDB.
 
 ## Non-goals
-The Substrait Python package is not an execution engine for Substrait Plans.
+PySubstrait is not an execution engine for Substrait Plans.
 
 ## Status
 This is an experimental package that is still under development.
 
 # Example
-At the moment, this package contains only generated Python classes for the Substrait protobuf messages. Let's use an existing Substrait producer, [Ibis](https://ibis-project.org), to provide an example.
+At the moment, this PySubstrait contains only generated Python classes for the Substrait protobuf messages. Let's use an existing Substrait producer, [Ibis](https://ibis-project.org), to provide an example.
 ## Generate a Substrait Plan with Ibis
 ```
 In [1]: import ibis
