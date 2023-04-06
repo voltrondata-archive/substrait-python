@@ -200,7 +200,7 @@ git submodule update --init --recursive
 ```
 ## Upgrade the substrait submodule
 ```
-cd substrait
+cd third_party/substrait
 git checkout <version>
 cd -
 git commit . -m "Use submodule <version>"
