@@ -1,5 +1,6 @@
 # PySubstrait
-[Substrait](https://substrait.io) is a cross-language specification for data compute operations.
+
+A Python package for [Substrait](https://substrait.io), the cross-language specification for data compute operations.
 
 ## Goals
 The Substrait Python package aims to provide a Python interface to Substrait. It will allow users to construct and manipulate a Substrait Plan from Python for evaluation by a Substrait consumer, such as DataFusion or DuckDB.
