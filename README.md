@@ -12,7 +12,7 @@ PySubstrait is not an execution engine for Substrait Plans.
 This is an experimental package that is still under development.
 
 # Example
-At the moment, this PySubstrait contains only generated Python classes for the Substrait protobuf messages. Let's use an existing Substrait producer, [Ibis](https://ibis-project.org), to provide an example.
+At the moment, PySubstrait contains only generated Python classes for the Substrait protobuf messages. Let's use an existing Substrait producer, [Ibis](https://ibis-project.org), to provide an example.
 ## Generate a Substrait Plan with Ibis
 ```
 In [1]: import ibis
