@@ -25,7 +25,7 @@ In [2]: movie_ratings = ibis.table(
    ...:     ],
    ...:     name="ratings",
    ...: )
-   ...: 
+   ...:
 
 In [3]: query = movie_ratings.select(
    ...:     movie_ratings.tconst,
@@ -44,9 +44,9 @@ Out[7]: bytes
 ```
 ## Read the Plan protobuf message using PySubstrait
 ```
-In [8]: import substrait
+In [8]: import pysubstrait
 
-In [9]: from substrait.proto.pysubstrait.plan_pb2 import Plan
+In [9]: from pysubstrait.proto.pysubstrait.plan_pb2 import Plan
 
 In [10]: my_plan = Plan()
 
@@ -200,7 +200,7 @@ git submodule update --init --recursive
 ```
 ## Upgrade the substrait submodule
 ```
-cd substrait
+cd third_party/substrait
 git checkout <version>
 cd -
 git commit . -m "Use submodule <version>"
